@@ -1,0 +1,78 @@
+﻿@model PetPal_New_.Models.DogBreed
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>DogBreed</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Breed" class="control-label"></label>
+                <input asp-for="Breed" class="form-control" />
+                <span asp-validation-for="Breed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HealthConcerns" class="control-label"></label>
+                <input asp-for="HealthConcerns" class="form-control" />
+                <span asp-validation-for="HealthConcerns" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HypoAllergenic" /> @Html.DisplayNameFor(model => model.HypoAllergenic)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="GroomingRequirements" class="control-label"></label>
+                <input asp-for="GroomingRequirements" class="form-control" />
+                <span asp-validation-for="GroomingRequirements" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExerciseRequirement" class="control-label"></label>
+                <input asp-for="ExerciseRequirement" class="form-control" />
+                <span asp-validation-for="ExerciseRequirement" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamilyFriendly" class="control-label"></label>
+                <input asp-for="FamilyFriendly" class="form-control" />
+                <span asp-validation-for="FamilyFriendly" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DogFriendly" class="control-label"></label>
+                <input asp-for="DogFriendly" class="form-control" />
+                <span asp-validation-for="DogFriendly" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FoodTypes" class="control-label"></label>
+                <input asp-for="FoodTypes" class="form-control" />
+                <span asp-validation-for="FoodTypes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

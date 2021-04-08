@@ -1,0 +1,89 @@
+﻿@model IEnumerable<PetPal_New_.Models.DogBreed>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Breed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HealthConcerns)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HypoAllergenic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GroomingRequirements)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExerciseRequirement)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamilyFriendly)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DogFriendly)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodTypes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Breed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HealthConcerns)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HypoAllergenic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroomingRequirements)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExerciseRequirement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamilyFriendly)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DogFriendly)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodTypes)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Breed">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Breed">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Breed">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
