@@ -27,6 +27,10 @@ namespace PetPal_New_.Controllers
         {
             return View();
         }
+        public IActionResult SignUpPage()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
