@@ -24,3 +24,7 @@ I got lucky being able to undo identity. I was able to backtrack and undo all of
 - what would you change / what do you know now that you wish you knew "then"?
 
 I wish I knew about identity first as well as focusing more on re-learning the asp.net fundamentals. I think I was ambitious with my end goal and was not able to meet it. Working on side projects has made me learn new ways to use identity and learn more about html and css and wish I could go back to the start.
+
+- What is next? 
+
+I will be shelving this project for the forseeable future. I will be strengthening my python abilities and would like to work on AI projects once I get a strong foundation. If I do come back to this project I will try to re-learn asp.net and go into it with a better understanding of it
