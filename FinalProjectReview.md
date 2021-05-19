@@ -2,7 +2,7 @@ Product Release / Project Presentation
 
 1. Describe project experience including each phase of the SDLC and the project artifacts (design documents, requirements trace, test reports...)
 
-The end goal of this project was to make it so users can easily track and manage their pets and know certain health concerns related to the breed, lifestyle, or age. Kind of like a wikipedia and a all in one spot for dog owners. I started this project late so did not do as many of the project artificats as I should have.
+The end goal of this project was to make it so users can easily track and manage their pets and know certain health concerns related to the breed, lifestyle, or age. Kind of like a wikipedia and a all in one spot for dog owners. I started this project late so did not do as many of the project artificats as I should have. In regards to the SDLC I am still imbetween the 3/4 stages. I have not moved to testing as I do not have a functional app.
 
 
 2. code and architecture walk-through
